@@ -1,0 +1,116 @@
+.main {
+    &-wrapper {
+        background-image: url(../img/main-bg.png);
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: 43%;
+        @media screen and (max-width: 1120px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-position-x: center;
+            background-position-y: 240px;
+        }
+        @media screen and (max-width: 1120px) {
+            background-position-y: 200px;
+        }
+        @media screen and (max-width: 715px) {
+            background: unset;
+        }
+    }
+    &-title {
+        font-size: 45px;
+        font-family: "Muller ExtraBold", sans-serif;
+        color: #ffaf18;
+        font-weight: bold;
+        max-width: 630px;
+        margin-top: 132px;
+        &::first-line {
+            color: rgb(185, 145, 80);
+        }
+        @media screen and (max-width: 1120px) {
+            text-align: center;
+            margin-top: 100px;
+        }
+        @media screen and (max-width: 1120px) {
+            font-size: 40px;
+            margin-top: 70px;
+        }
+        @media screen and (max-width: 559px) {
+            font-size: 32px;
+        }
+        @media screen and (max-width: 479px) {
+            margin-top: 40px;
+            font-size: 27px;
+        }
+    }
+    &-advantages {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 640px;
+        margin: 60px 0 15px 0;
+        @media screen and (max-width: 1120px) {
+            margin-top: 40%;
+        }
+        @media screen and (max-width: 659px) {
+            justify-content: center;
+        }
+        @media screen and (max-width: 715px) {
+            margin-top: 60px;
+        }
+        @media screen and (max-width: 479px) {
+            margin-top: 30px;
+        }
+    }
+    &__button {
+        padding: 22px 53px;
+        @media screen and (max-width: 479px) {
+            padding: 18px 43px;
+        }
+    }
+}
+
+.advantages {
+    &__item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 45px;
+        @media screen and (max-width: 479px) {
+            margin-bottom: 25px;
+        }
+    }
+    &__img {
+        margin-right: 16px;
+        @media screen and (max-width: 559px) {
+            width: 50px;
+        }
+    }
+    &-text {
+        &__title {
+            font-size: 16px;
+            font-family: "Muller ExtraBold";
+            color: rgb(255, 175, 24);
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 1.5;
+            margin-bottom: 10px;
+            @media screen and (max-width: 559px) {
+                font-size: 14px;
+            }
+        }
+        &__description {
+            font-size: 16px;
+            font-family: "Muller Regular", sans-serif;
+            color: rgb(185, 145, 80);
+            line-height: 1;
+            max-width: 227px;
+            @media screen and (max-width: 559px) {
+                font-size: 13px;
+            }
+            @media screen and (max-width: 479px) {
+                max-width: 185px;
+            }
+        }
+    }
+}

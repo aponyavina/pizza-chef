@@ -1,0 +1,117 @@
+.request {
+    padding-top: 215px;
+    background-image: url(../img/request-bg.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    padding-bottom: 115px;
+    @media screen and (min-width: 1920px) {
+        background-size: 25%;
+    }
+    @media screen and (max-width: 1290px) {
+        background: none;
+        padding-top: 155px;
+    }
+    @media screen and (max-width: 767px) {
+        padding-top: 105px;
+    }
+    @media screen and (max-width: 479px) {
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+    &-wrapper {
+        display: flex;
+        align-items: flex-end;
+        @media screen and (max-width: 1290px) {
+            justify-content: space-evenly;
+        }
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &-info {
+        margin-right: 122px;
+        @media screen and (max-width: 1290px) {
+            margin-right: 20px;
+        }
+    }
+    &-title {
+        font-size: 35px;
+        font-family: "Muller ExtraBold", sans-serif;
+        font-weight: bold;
+        color: rgb(255, 175, 24);
+        max-width: 400px;
+        &::first-line {
+            color: #b99150;
+        }
+        @media screen and (max-width: 767px) {
+            text-align: center;
+            max-width: unset;
+        }
+        @media screen and (max-width: 559px) {
+            font-size: 25px;
+        }
+        @media screen and (max-width: 479px) {
+            font-size: 22px;
+        }
+    }
+    &__description {
+        font-size: 16px;
+        font-family: "Muller Regular", sans-serif;
+        color: rgb(185, 145, 80);
+        line-height: 1.5;
+        max-width: 396px;
+        margin-top: 65px;
+        @media screen and (max-width: 1290px) {
+            margin-top: 45px;
+        }
+        @media screen and (max-width: 767px) {
+            max-width: 546px;
+            margin-bottom: 45px;
+            display: flex;
+            text-align: center;
+        }
+        @media screen and (max-width: 559px) {
+            font-size: 14px;
+        }
+        @media screen and (max-width: 479px) {
+            margin: 30px 0;
+        }
+    }
+    &-form {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 330px;
+        &__button {
+            padding: 22px 0;
+            @media screen and (max-width: 479px) {
+                padding: 18px 0;
+            }
+        }
+        @media screen and (max-width: 479px) {
+            width: 100%;
+        }
+    }
+    &__input {
+        border: 1px solid rgb(185, 145, 80);
+        color: #382400;
+        font-size: 18px;
+        font-family: "Muller Regular", sans-serif;
+        padding: 22px 23px;
+        margin-bottom: 24px;
+        &::placeholder {
+            font-size: 18px;
+            font-family: "Muller Regular", sans-serif;
+            color: rgb(203, 168, 110);
+            @media screen and (max-width: 479px) {
+                font-size: 14px;
+            }
+        }
+        @media screen and (max-width: 479px) {
+            padding: 16px;
+            margin-bottom: 18px;
+        }
+    }
+}

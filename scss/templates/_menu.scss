@@ -1,0 +1,81 @@
+.menu {
+    margin-top: 160px;
+    @media screen and (max-width: 1120px) {
+        margin-top: 110px;
+    }
+    @media screen and (max-width: 479px) {
+        margin-top: 60px;
+    }
+    &-title {
+        font-size: 35px;
+        font-family: "Muller Bold", sans-serif;
+        color: rgb(189, 152, 92);
+        font-weight: bold;
+        text-align: center;
+        @media screen and (max-width: 559px) {
+            font-size: 25px;
+        }
+        @media screen and (max-width: 479px) {
+            margin-top: 22px;
+        }
+    }
+    &-wrapper {
+        margin-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        @media screen and (max-width: 479px) {
+            margin-top: 40px;
+        }
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+    box-shadow: 0px 3px 13.8px 1.2px rgba(152, 152, 152, 0.2);
+    background-color: #fff;
+    max-width: 282px;
+    margin: 0 5px 24px 5px;
+    &__img {
+        height: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        &-item {
+            width: 100%;
+            object-fit: cover;
+            cursor: pointer;
+        }
+    }
+    &__title {
+        font-size: 18px;
+        font-family: "Muller Bold", sans-serif;
+        color: rgb(56, 36, 0);
+        font-weight: bold;
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+    &__ingredients {
+        font-size: 14px;
+        font-family: "Muller Regular", sans-serif;
+        color: rgb(24, 26, 26);
+        line-height: 1.286;
+        margin-bottom: 15px;
+        text-align: center;
+        height: 54px;
+    }
+    &__button {
+        padding: 15px;
+        width: 100%;
+        text-align: center;
+        &:hover {
+            box-shadow: 1px 1px 10px 1px #baa275;
+        }
+    }
+}
+
+

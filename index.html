@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Pizza Chef</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <a href="#" class="header__logo logo">
+                    <img src="img/logo.png" alt="logo" class="header__logo-img logo-img">
+                    <span class="header__logo-span logo-span">Pizza Cheff</span>
+                </a>
+                <div class="header__menu">
+                    <img src="img/cancel.svg" alt="close" class="header__menu-close">
+                    <a href="#menu" class="header__menu-item">Пиццы</a>
+                    <a href="#" class="header__menu-item">Напитки</a>
+                    <a href="#request" class="header__menu-item">Доставка и оплата</a>
+                    <a href="#" class="header__menu-item">Контакты</a>
+                </div>
+                <div class="header__icons">
+                    <a href="#" class="header__cart">
+                        <img src="img/shopping-cart.svg" alt="cart" class="header__cart-img">
+                    </a>
+                    <img src="img/menu.svg" alt="menu" class="header__burger">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main" id="main">
+        <div class="container">
+            <div class="main-wrapper">
+                <h1 class="main-title">Самая вкусная пицца в мире
+                    только в Pizza Cheff
+                </h1>
+                <div class="main-advantages advantages" data-aos="zoom-in">
+                    <div class="advantages__item">
+                        <img src="img/corn.png" alt="corn" class="advantages__img">
+                        <div class="advantages-text">
+                            <span class="advantages-text__title">Лучшее тесто</span>
+                            <p class="advantages-text__description">Мы создаем тесто только из
+                                отборной итальянской муки
+                                наивысшего качества
+                            </p>
+                        </div>
+                    </div>
+                    <div class="advantages__item">
+                        <img src="img/cap.png" alt="cap" class="advantages__img">
+                        <div class="advantages-text">
+                            <span class="advantages-text__title">Лучшие повара</span>
+                            <p class="advantages-text__description">Пиццы готовят самые
+                                профессиональные
+                                итальянские повара
+                            </p>
+                        </div>
+                    </div>
+                    <div class="advantages__item">
+                        <img src="img/guarantee.png" alt="guarantee" class="advantages__img">
+                        <div class="advantages-text">
+                            <span class="advantages-text__title">Гарантия качества</span>
+                            <p class="advantages-text__description">Наша пиццерия получила
+                                множество наград и
+                                признаний по всему миру
+                            </p>
+                        </div>
+                    </div>
+                    <div class="advantages__item">
+                        <img src="img/dish.png" alt="dish" class="advantages__img">
+                        <div class="advantages-text">
+                            <span class="advantages-text__title">Отборные рецепты</span>
+                            <p class="advantages-text__description">Мы используем рецепты
+                                от мировых лидеров
+                                в изготовлении пиццы
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button class="main__button button">Выбрать пиццу</button>
+            </div>
+        </div>
+    </main>
+    <div class="menu" id="menu">
+        <div class="container">
+            <h2 class="menu-title">Выберите свою любимую пиццу</h2>
+            <div class="menu-wrapper" data-aos="fade-up">
+                <div class="menu-card card">
+                    <a href="img/menu/pizza1.png" class="card__img" data-fancybox="images">
+                        <img src="img/menu/pizza1.png" alt="pizza1" class="card__img-item">
+                    </a>
+                    <div class="card__title">Мясная Делюкс</div>
+                    <div class="card__ingredients">Пепперони, лук, бекон, томатная паста, колбаски, перец, грибы, соус
+                        чили, ананасы</div>
+                    <div class="card__button button">В корзину</div>
+                </div>
+                <div class="menu-card card">
+                    <a href="img/menu/pizza2.png" class="card__img" data-fancybox="images">
+                        <img src="img/menu/pizza2.png" alt="pizza2" class="card__img-item">
+                    </a>
+                    <div class="card__title">Морская Премиум</div>
+                    <div class="card__ingredients">Перец, сыр, креветки, кальмары, мидии, лосось</div>
+                    <div class="card__button button">В корзину</div>
+                </div>
+                <div class="menu-card card">
+                    <a href="img/menu/pizza3.png" class="card__img" data-fancybox="images">
+                        <img src="img/menu/pizza3.png" alt="pizza3" class="card__img-item">
+                    </a>
+                    <div class="card__title">Бекон и Сосиски</div>
+                    <div class="card__ingredients">Бекон, сыр, сосиски, ананас, томатная паста</div>
+                    <div class="card__button button">В корзину</div>
+                </div>
+                <div class="menu-card card">
+                    <a href="img/menu/pizza4.png" class="card__img" data-fancybox="images">
+                        <img src="img/menu/pizza4.png" alt="pizza4" class="card__img-item">
+                    </a>
+                    <div class="card__title">Куриная Делюкс</div>
+                    <div class="card__ingredients">Курица, ананас, сыр Пепперони, соус для пиццы, томатная паста</div>
+                    <div class="card__button button">В корзину</div>
+                </div>
+                <div class="menu-card card">
+                    <a href="img/menu/pizza5.png" class="card__img" data-fancybox="images">
+                        <img src="img/menu/pizza5.png" alt="pizza5" class="card__img-item">
+                    </a>
+                    <div class="card__title">Барбекю Премиум</div>
+                    <div class="card__ingredients">Свинина BBQ, соус Барбкею, сыр, курица, соус для пиццы, соус чили
+                    </div>
+                    <div class="card__button button">В корзину</div>
+                </div>
+                <div class="menu-card card">
+                    <a href="img/menu/pizza6.png" class="card__img" data-fancybox="images">
+                        <img src="img/menu/pizza6.png" alt="pizza6" class="card__img-item">
+                    </a>
+                    <div class="card__title">Пепперони Дабл</div>
+                    <div class="card__ingredients">Пепперони, сыр, колбаса 2 видов: обжаренная и вареная</div>
+                    <div class="card__button button">В корзину</div>
+                </div>
+                <div class="menu-card card">
+                    <a href="img/menu/pizza7.png" class="card__img" data-fancybox="images">
+                        <img src="img/menu/pizza7.png" alt="pizza7" class="card__img-item">
+                    </a>
+                    <div class="card__title">Куриное трио</div>
+                    <div class="card__ingredients">Жареная курица, Тушеная курица, Куриные наггетсы, перец, сыр, грибы,
+                        соус для пиццы</div>
+                    <div class="card__button button">В корзину</div>
+                </div>
+                <div class="menu-card card">
+                    <a href="img/menu/pizza8.png" class="card__img" data-fancybox="images">
+                        <img src="img/menu/pizza8.png" alt="pizza8" class="card__img-item">
+                    </a>
+                    <div class="card__title">Сырная</div>
+                    <div class="card__ingredients">Сыр Джюгас, Сыр с плесенью, Сыр Моцарелла, Сыр секретный</div>
+                    <div class="card__button button">В корзину</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="request" id="request">
+        <div class="container">
+            <div class="request-wrapper">
+                <div class="request-info">
+                    <h2 class="request-title">
+                        Хватит думать! </br>
+                        Доставим заказ за 30 минут!
+                    </h2>
+                    <p class="request__description">Мы гарантированно доставим вашу пиццу за 30 минут с момента
+                        оформления заказа. Если мы опоздаем даже на 1 минуту - вы получаете весь заказ бесплатно и
+                        ваучер на скидку на следующий заказ. Мы гордимся нашим сервисом и сделаем всё, чтобы наш клиент
+                        был доволен и не остался голодный!</p>
+                </div>
+                <form action="#" class="request-form" id="form">
+                    <input type="text" class="request__input" name="name" placeholder="Ваше имя" required>
+                    <input type="text" class="request__input" name="address" placeholder="Адрес доставки" required>
+                    <input type="phone" class="request__input" name="phone" placeholder="Телефон" required>
+                    <button type="submit" class="request-form__button button">Оформить заказ</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <a href="#" class="footer__logo logo">
+                    <img src="img/logo.png" alt="logo" class="footer__logo-img logo-img">
+                    <span class="footer__logo-span logo-span">Pizza Cheff</span>
+                </a>
+                <span class="footer-text">Все права защищены, 2020</span>
+            </div>
+        </div>
+    </div>
+    <div class="popup">
+        <div class="popup-content">
+          <h2 class="popup__title">Спасибо, Ваш заказ готовится!</h2>
+          <button class="button popup__button">Закрыть</button>
+        </div>
+      </div>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
