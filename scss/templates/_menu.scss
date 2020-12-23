@@ -39,6 +39,12 @@
     background-color: #fff;
     max-width: 282px;
     margin: 0 5px 24px 5px;
+    @media screen and (min-width: 992px) {
+        &:hover {
+            transform: scale(1.05);
+            transition: all 300ms ease;
+        }
+    }
     &__img {
         height: 180px;
         display: flex;
@@ -72,10 +78,10 @@
         padding: 15px;
         width: 100%;
         text-align: center;
-        &:hover {
-            box-shadow: 1px 1px 10px 1px #baa275;
+        @media screen and (min-width: 992px) {
+            &:hover {
+                box-shadow: 1px 1px 10px 1px #baa275;
+            }
         }
     }
 }
-
-

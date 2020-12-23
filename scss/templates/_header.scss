@@ -38,8 +38,10 @@
             color: rgb(164, 107, 0);
             line-height: 1.2;
             margin: 0 25px;
-            &:hover {
-                color: rgb(216, 160, 57);
+            @media screen and (min-width: 992px) {
+                &:hover {
+                    color: rgb(216, 160, 57);
+                }
             }
             @media screen and (max-width: 595px) {
                 margin: 20px auto;

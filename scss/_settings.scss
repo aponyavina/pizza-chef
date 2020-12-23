@@ -114,8 +114,11 @@ a {
     background-color: #ffaf18;
     color: #382400;
     cursor: pointer;
-    &:hover {
-        box-shadow: 1px 1px 10px 1px #baa275;
+    @media screen and (min-width: 992px) {
+        &:hover {
+            box-shadow: 1px 1px 10px 1px #baa275;
+            transition: all 500ms ease;
+        }
     }
 }
 
