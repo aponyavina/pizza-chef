@@ -1,5 +1,7 @@
 'use strict';
 
+AOS.init();
+
 const header = document.getElementById('header'),
   burger = header.querySelector('.header__burger'),
   headerMenu = header.querySelector('.header__menu'),
@@ -22,10 +24,10 @@ header.addEventListener('click', (e) => {
 
 form.addEventListener('input', e => {
   const target = e.target;
-  if (target.getAttribute('name') === 'name') {
+  if (target.matches('input[name="name"]')) {
     target.value = target.value.replace(/[^а-яa-zA-ZА-ЯёЁё\-]/g, '');
   }
-  if (target.getAttribute('name') === 'phone') {
+  if (target.matches('input[name="phone"]')) {
     target.value = target.value.replace(/[^\d+]/g, '');
     (target.value[0] === '+') ? target.value = target.value.slice(0, 12) : target.value = target.value.slice(0, 11);
   }
@@ -33,11 +35,7 @@ form.addEventListener('input', e => {
 
 const formHelper = () => {
   popup.style.display = 'block';
-  formInputs.forEach(item => {
-    if (item.value !== '') {
-      item.value = '';
-    }
-  });
+  form.reset();
   setTimeout(() => {
     popup.style.display = 'none';
   }, 3000);
@@ -78,9 +76,23 @@ popupBtn.addEventListener('click', () => {
   popup.style.display = 'none';
 });
 
-form.addEventListener('submit', e => {
-  e.preventDefault();
-  sendForm();
-});
+let valid = false;
 
-AOS.init();
+const isValid = e => {
+  e.preventDefault();
+  if (e.type === 'input') { 
+    e.target.value.trim() === '' ? e.target.style.border = '1px solid red' : e.target.style.border = '1px solid #b99150';
+    formInputs.forEach(input => input.value.trim !== '' ? valid = true : valid = false);
+  } else if (e.type === 'submit') { 
+    let inputCollection = [...e.target.elements].filter(item => item.localName === 'input');
+    inputCollection.forEach(item => {
+      item.value === '' ? valid = false : null;
+      item.value.trim() === '' ? item.style.border = '1px solid red' : item.style.border = '1px solid #b99150';
+    });
+    valid === true ? sendForm() : null;
+  }
+};
+
+form.addEventListener('input', isValid);
+
+form.addEventListener('submit', isValid);

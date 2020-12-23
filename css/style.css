@@ -194,6 +194,7 @@ input {
             flex-direction: column;
     margin-top: 0;
     padding-top: 50px;
+    z-index: 100;
   }
 }
 
@@ -808,13 +809,6 @@ input {
     padding: 16px;
     margin-bottom: 18px;
   }
-}
-
-.error-text {
-  position: absolute;
-  bottom: -25px;
-  color: red;
-  font-size: 15px;
 }
 
 .footer {
